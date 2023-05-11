@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "94289f05-6a4b-49f1-8a45-3cf6405c646f",
+		"name": "DB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "tes",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "tes@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8000/api/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://localhost:8000/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Checklist",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwidXNlcm5hbWUiOiJ0ZXMiLCJBUElfVElNRSI6MTY4Mzc5NDI1MH0.MJ3aGyt2JeO0lzb6mGWDAinXXCq592dttND8JsMmwmY",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8000/product"
+			},
+			"response": []
+		},
+		{
+			"name": "Post Checklist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8000/product"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Checklist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8000/product"
+			},
+			"response": []
+		}
+	]
+}
